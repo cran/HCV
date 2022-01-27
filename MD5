@@ -1,0 +1,8 @@
+ec433ee7c4f60459c3e4edb3fcc725ce *DESCRIPTION
+d1335caebd1011b5a304b920c0ce55cf *NAMESPACE
+27547850cfe91cd154d1a0b2d188f5dc *R/HCV.R
+21d1663c31f9bbed491e13f0007f2d96 *man/HCV.Rd
+efd68b4087b53740c27d98f91af7c362 *man/getCluster.Rd
+7b2265e3494f396fbe0d38ae7c114f8b *man/plotMap.Rd
+8ac874f60b728ab32df35299191b3fb4 *man/synthetic_data.Rd
+d302139973f22ec50b4a6be4906e63c3 *man/tessellation_adjacency_matrix.Rd
