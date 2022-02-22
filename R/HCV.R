@@ -56,14 +56,14 @@ DistanceBetweenCluster <- function(linkage, alpha_i, alpha_j, beta, gamma, d_hi,
 #' @author ShengLi Tzeng and Hao-Yun Hsu.  
 #' @references  Gallier, J. (2011). Dirichlet–Voronoi Diagrams and Delaunay Triangulations. In Geometric Methods and Applications (pp. 301-319). Springer, New York, NY.
 #' @examples
-#' require(fields)
-#' require(alphahull)
+#' if( require(fields) & require(alphahull) ) {
 #' pts <- ChicagoO3$x
 #' rownames(pts) <- LETTERS[1:20]
 #' Vcells <- delvor(pts)
 #' plot(Vcells,wlines='vor',pch='.')
 #' text(pts,rownames(pts))
 #' Amat <- tessellation_adjacency_matrix(pts)  
+#' }
 #
 tessellation_adjacency_matrix <- function(geometry_domain){
 

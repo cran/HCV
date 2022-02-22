@@ -16,14 +16,14 @@ A matrix with 0-1 values indicating the adjacency between the \emph{n} input poi
 This function deals with spatial data having a point-level geometry domain.  It converts the spatial proximity into an adjacency matrix based on Voronoi tessellation or Delaunay triangulation.
 }
 \examples{
-require(fields)
-require(alphahull)
+if( require(fields) & require(alphahull) ) {
 pts <- ChicagoO3$x
 rownames(pts) <- LETTERS[1:20]
 Vcells <- delvor(pts)
 plot(Vcells,wlines='vor',pch='.')
 text(pts,rownames(pts))
 Amat <- tessellation_adjacency_matrix(pts)  
+}
 }
 \references{
 Gallier, J. (2011). Dirichlet–Voronoi Diagrams and Delaunay Triangulations. In Geometric Methods and Applications (pp. 301-319). Springer, New York, NY.
